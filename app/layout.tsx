@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { headers } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "VillageCircle — Where Conviction Becomes Code",
@@ -30,6 +31,7 @@ export default async function RootLayout({
       <body>
         <div className="grain" />
         {children}
+        <Analytics />
       </body>
     </html>
   );
