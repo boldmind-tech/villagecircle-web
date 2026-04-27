@@ -105,3 +105,61 @@ html, body {
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: #0A0B07; }
 ::-webkit-scrollbar-thumb { background: rgba(201,146,42,0.35); border-radius: 2px; }
+
+/* ──────────────────────────────────────────────────────────────────────────
+   RESPONSIVE — public pages (dark VillageCircle theme)
+   ────────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Nav bar */
+  nav[style*="position: fixed"] {
+    padding: 14px 20px !important;
+  }
+
+  /* Section padding */
+  .vc-section {
+    padding: 100px 20px 60px !important;
+  }
+
+  /* Hero headline font clamp works already; tighten padding */
+  div[style*="padding: \"140px"] {
+    padding-top: 100px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* River filter pill row → scroll horizontally */
+  .river-pills {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  /* Concept grid → single column */
+  .concept-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Ticker bar text */
+  .ticker-text {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ensure images don't overflow */
+  img { max-width: 100%; height: auto; }
+
+  /* AdSense auto-ads: prevent horizontal overflow */
+  ins.adsbygoogle { max-width: 100% !important; }
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   PORTAL mobile top-bar padding offset
+   ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .portal-main {
+    padding-top: 72px !important;
+  }
+}

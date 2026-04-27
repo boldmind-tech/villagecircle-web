@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
-import { CURRENT_COHORT, getCohortStatus } from "@/lib/vibe-coders/cohort-config";
 
-export async function GET() {
-  return NextResponse.json({
-    ...CURRENT_COHORT,
-    computedStatus: getCohortStatus(CURRENT_COHORT),
-  });
-}
+const MOVED = NextResponse.json(
+  { error: "Service moved to boldmind-service.", service: "boldmind-service" },
+  { status: 503 },
+);
+
+export async function GET() { return MOVED; }
+export async function POST() { return MOVED; }

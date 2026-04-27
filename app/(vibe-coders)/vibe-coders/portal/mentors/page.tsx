@@ -1,6 +1,6 @@
 export default function MentorsPage() {
   const mentors = [
-    { name: "Abel Miri", role: "Lead Mentor · Full-Stack + AI", bio: "Founder of BoldMind. Building African-first AI tools. 10+ years product and engineering.", availability: "By appointment", type: "Lead" },
+    { name: "Charles Uche Chijuka", role: "Lead Mentor · Full-Stack + AI", bio: "Founder of BoldMind. Building African-first AI tools. 10+ years product and engineering.", availability: "By appointment", type: "Lead" },
     { name: "Community Mentor", role: "Product & Business", bio: "Mentor slots open to practitioners who want to give back to Nigerian builders.", availability: "Open slot", type: "Open" },
   ];
 
